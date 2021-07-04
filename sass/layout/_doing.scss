@@ -1,0 +1,46 @@
+@media screen and (max-width: 1199px) {
+  .doing {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .doing {
+    padding-bottom: 94px;
+  }
+  .doing-lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -50px;
+  }
+
+  .doing-lists__items {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .doing-lists__card {
+    position: relative;
+  }
+  .doing-lists__desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 23.8%;
+    background-color: var(--title-pictures);
+  }
+  .doing-lists__title {
+    display: inline-block;
+    position: absolute;
+    padding: 27px 82px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+  }
+}

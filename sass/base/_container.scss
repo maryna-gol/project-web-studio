@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  .page-header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero & {
+    padding: 118px 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+
+    .about & {
+      display: flex;
+    }
+    .hero & {
+      padding: 118px 204px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+
+    .hero & {
+      padding: 200px 0px;
+      text-align: center;
+      max-width: 696px;
+    }
+  }
+}

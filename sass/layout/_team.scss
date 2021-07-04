@@ -1,0 +1,111 @@
+
+.team-lists__member {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--nav-color);
+}
+.team-lists__card {
+  padding-bottom: 24px;
+  background: var(--main-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-lists__prof {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--tel-link-color);
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-color);
+  background-color: var(--main-color);
+  transition: background-color var(--transition-duration)
+    var(--transition-function);
+  &:hover,
+  &:focus {
+    background-color: var(--second-color);
+  }
+}
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  transition: fill var(--transition-duration) var(--transition-function);
+
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: var(--main-color);
+  }
+}
+.team {
+  background-color: var(--team-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team-lists__item {
+  margin-bottom: 30px;
+  &:last-child {
+      margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+  .team {
+    background-color: var(--team-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .team-lists {
+    display: block;
+    text-align: center;
+  }
+
+  .team-lists__item {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+
+    text-align: center;
+  }
+  .team-lists__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team-lists__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}

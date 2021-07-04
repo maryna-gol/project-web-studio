@@ -1,0 +1,48 @@
+.modal-window {
+  position: relative;
+  background-color: var(--main-color);
+  padding: 40px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  max-width: 450px;
+  // width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: transform var(--transition-duration) var(--transition-function);
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 528px;
+    height: 581px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal-window__close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 6px;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--main-color);
+}
+.modal-window__close-icon {
+  fill: currentColor;
+  transition: fill var(--transition-duration) var(--transition-function);
+  &:hover,
+  &:focus {
+    fill: var(--second-color);
+  }
+}
